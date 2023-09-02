@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Golos';
+  src: url("Golos-Text.ottt/PT/PT/Golos-Text/Golos-Text_Regular.ttf");
+}
+font-face {
+  font-family: 'Fira Sans';
+  src: url("firasans/Firasanssemibold.woff2") format("woff2"), url("firasans/Firasanssemibold.woff") format("woff"), url("firasans/Firasanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("Fira Sans Medium"), local("FiraSans-Medium"), url("firasans/Firasansmedium.woff2") format("woff2"), url("firasans/Firasansmedium.woff") format("woff"), url("firasans/Firasansmedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"), url("firasans/Firasansregular.woff2") format("woff2"), url("firasans/Firasansregular.woff") format("woff"), url("firasans/Firasansregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("Fira Sans Bold Italic"), local("FiraSans-BoldItalic"), url("firasans/Firasansbolditalic.woff2") format("woff2"), url("firasans/Firasansbolditalic.woff") format("woff"), url("firasans/Firasansbolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("firasans/Firasansbold.woff2") format("woff2"), url("firasans/Firasansbold.woff") format("woff"), url("firasans/Firasansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */

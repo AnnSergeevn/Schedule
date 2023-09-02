@@ -1,0 +1,221 @@
+$font-stack: 'Golos';
+
+$color_content:#6CAFC9;
+
+
+
+
+ .toggle-box_geogr {
+  display: none;
+}
+.toggle-box_geogr + label {
+  display: block;
+  background:#FFFFFF;
+  
+  margin-left:1.5rem;
+  border-radius: 1.5rem;
+   height: 4.9rem;
+  
+  
+}
+
+.toggle-box_geogr + label + div {
+  display: none;
+}
+
+.toggle-box_geogr:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding:0.5rem;
+  margin-top:-7.5rem;
+  margin-left:0rem;
+   height: 59.4rem;
+   border-radius: 1.5rem;
+   box-shadow: -1.5rem 0rem 0rem 0rem $color_content;
+}
+
+
+
+.toggle-box_geogr:checked + label  {
+ opacity: 0;
+}
+
+
+.toggle-box_geogr:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  top: 2rem;
+	left:0.9rem;
+
+}
+.toggle-box_geogr:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+	left:0.4rem;
+  transform: rotate(0);
+}
+.toggle-box_geogr:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left:0.4rem;
+  transform: rotate(90deg);
+}
+.toggle-box_geogr:checked ~ .menu__btn  {
+ margin-top:-58.7rem;
+
+}
+
+.undergraduate_geogr p{
+	color:$color_content;
+}
+
+.open .menu__box_geogr{
+	-webkit-box-shadow: -1.5rem 0rem 0rem 0rem $color_content;
+	box-shadow: -1.5rem 0rem 0rem 0rem $color_content;
+}
+
+.departments-title_geogr{
+	-webkit-box-shadow: -1.5rem 0rem 0rem 0rem $color_content;
+          box-shadow: -1.5rem 0rem 0rem 0rem $color_content;
+}
+
+
+.course_number_geogr{
+color:$color_content;
+}
+
+.menu__box_title_geogr{
+	color:$color_content;
+}
+
+.form-education_geogr lable{
+	color:$color_content;
+}
+
+.magistracy_geogr p{
+		color:$color_content;
+}
+
+
+.form-education_geogr{
+	margin-left:3rem;
+	margin-top:1.8rem;
+}
+
+.form-education_btn__geogr{
+	box-sizing: border-box;
+margin-left:4rem;
+margin-top:2rem;
+width: 28.1rem;
+height: 4.6rem;
+left: 10.2rem;
+top: 267.8rem;
+
+background: #6DC2AB;
+border: 0.2rem solid #6DC2AB;
+border-radius: 5.5rem;
+}
+
+.form-education_geogr>input[type="radio"] {
+  display: none;
+}
+
+.form-education_geogr>input[type="radio"]:checked+label {
+  box-sizing: border-box;
+
+
+width: 28.1rem;
+height: 5rem;
+
+
+background: $color_content;
+border: 0.2rem solid $color_content;
+border-radius: 5.5rem;
+font-family: $font-stack;
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 1.9rem;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.form-education_geogr>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+ 
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_geogr:checked~#block__daytime_geogr,
+#form-education__part-time_geogr:checked~#block__part-time_geogr,
+#form-education__graduate_geogr:checked~#block__graduate_geogr, 
+#form-education__session_geogr:checked~#block__session_geogr{
+  display: block;
+}
+
+.form-education_geogr>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #eee;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left:1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+
+font-family: $font-stack;
+font-style: normal;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 1.9rem;
+text-align: center;
+
+color: $color_content;
+width: 28.1rem;
+height: 5rem;
+
+
+border: 0.2rem solid $color_content;
+border-radius: 5.5rem;
+}
+
+.form-education_geogr>label:first-of-type {
+  margin-left: 0;
+}
+
+
+.teacher-schedule-search__input_geogr{
+	box-sizing: border-box;
+
+
+width: 58rem;
+height: 4rem;
+left: 10.2rem;
+top: 307.8rem;
+
+background: #FFFFFF;
+
+border: 0.2rem solid $color_content;
+border-radius: 1rem;
+
+font-family: $font-stack;
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.7rem;
+
+color: #949ABC;
+padding-left:1.8rem;
+}
+
+.b-input_teacher_geogr:after {
+  
+  background: $color_content;
+ 
+}

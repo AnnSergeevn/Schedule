@@ -1,0 +1,5804 @@
+@charset "UTF-8";
+@import "fonts.css";
+html {
+  font-size: 0.69vw;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.schedule-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 41rem;
+}
+
+.schedule__link a {
+  text-decoration: none;
+  color: #6CAFC9;
+}
+
+ul.breadcrumb {
+  position: absolute;
+  width: 45.3rem;
+  height: 1.8rem;
+  left: 7.7rem;
+  top: 20.5rem;
+  padding: 10px 1px 2px 0px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  content: url("../point/arrow_two.png");
+  margin-bottom: -15rem;
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.schedule__button {
+  position: relative;
+  width: 129.6rem;
+  height: 8.6rem;
+  left: 4.4rem;
+  top: 27rem;
+  /* синий градиент */
+  background: linear-gradient(112.56deg, #354786 18.07%, #4A61AA 64.68%);
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0rem -1.5rem  #CDD2E4;
+          box-shadow: 0rem -1.5rem  #CDD2E4;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 150%;
+  /* or 48px */
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-top: 3.6rem;
+}
+
+.search-teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 134rem;
+}
+.search-teacher__title {
+  width: 71.5rem;
+  height: 12.0rem;
+  padding-top: 6.5rem;
+  margin-left: 4.5rem;
+  text-transform: uppercase;
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 6.4rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.105em;
+  -webkit-transform: skew(0 deg);
+  transform: skew(0 deg);
+  opacity: 0.5;
+  color: white;
+  text-shadow: 0.1rem 0 0.1rem #668BD5,  0 0.1rem 0.1rem #668BD5,  -0.1rem 0 0.1rem #668BD5,  0 -0.1rem 0.1rem #668BD5;
+}
+.search-teacher__point {
+  width: 27.5rem;
+  height: 17.8rem;
+}
+.search-teacher__point_img {
+  width: 15.847rem;
+  height: 1.114rem;
+  margin-top: 9.6rem;
+  background: url(./point/point.png);
+  opacity: 0.5;
+}
+.search-teacher__text {
+  height: 19.6rem;
+  margin-right: 0;
+}
+.search-teacher__text_p {
+  width: 26.5rem;
+  height: 7.1rem;
+  margin-top: 7rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  /* or 15px */
+  text-align: right;
+  color: #668BD5;
+}
+.search-teacher_point_box_img {
+  text-align: right;
+  margin-left: 22.8rem;
+  margin-top: -11.8rem;
+  background: url(./point/point_box.png);
+  height: 15.9rem;
+  width: 7.9rem;
+}
+
+.field-search-teacher {
+  width: 140rem;
+  height: 26rem;
+}
+.field-search-teacher_shadow {
+  width: 129.6rem;
+  height: 21.8rem;
+  margin-left: 4.5rem;
+  background: #668BD4;
+  /* Тень */
+  -webkit-box-shadow: 0rem 0rem 22rem 5rem rgba(190, 199, 231, 0.23);
+          box-shadow: 0rem 0rem 22rem 5rem rgba(190, 199, 231, 0.23);
+  border-radius: 1.5rem;
+}
+.field-search-teacher_podl {
+  width: 128.1rem;
+  height: 21.8rem;
+  margin-left: 1.5rem;
+  margin-top: 0rem;
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 1rem 1rem 3rem #F5F5F5;
+          box-shadow: 1rem 1rem 3rem #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.field-search-teacher_podl_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.field-search-teacher_title {
+  width: 28.4rem;
+  height: 3rem;
+  padding-left: 3.6rem;
+  padding-top: 3.6rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #3D455F;
+}
+.field-search-teacher__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 55rem;
+  height: 4rem;
+  margin-left: 3.4rem;
+  margin-top: -0.6rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding-left: 1.3rem;
+  color: #949ABC;
+  cursor: pointer;
+}
+.field-search-teacher__input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #A84F3D;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.button-down-arrow__FIO {
+  position: absolute;
+  width: 11.4rem;
+  height: 4rem;
+  left: 53.8rem;
+  top: 67.3rem;
+  background: #668BD4;
+  border-radius: 1rem;
+  border: 0rem solid #668BD4;
+}
+
+.input_subdivision {
+  margin-left: 6.5rem;
+}
+
+.button-down-arrow__subdivision {
+  position: absolute;
+  width: 11.5rem;
+  height: 4rem;
+  left: 118.5rem;
+  top: 67.4rem;
+  border: 0rem solid #668BD4;
+  background: #668BD4;
+  border-radius: 1rem;
+}
+
+.alphabet ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 121.8rem;
+  margin-left: -1.6rem;
+  list-style-type: none;
+}
+
+.alphabet ul li {
+  width: 3.454rem;
+  height: 3.474rem;
+  margin-top: 3.6rem;
+  border-radius: 50%;
+  background: #F1F3FA;
+  border: 0rem solid #668BD4;
+}
+
+.alphabet li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+		   align-items: center;
+}
+
+.alphabet__a {
+  line-height: 3.2rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #3D455F;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.groups {
+  width: 126rem;
+}
+
+.groups_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 18.4rem;
+  width: 130rem;
+}
+.groups_header__text {
+  width: 62.8rem;
+}
+.groups_header_point_box_img {
+  text-align: right;
+  margin-left: 4.2rem;
+  margin-top: 3rem;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  background: url(./point/point_box.png);
+  height: 15.9rem;
+  width: 7.9rem;
+}
+.groups_header__text_p {
+  width: 26.5rem;
+  height: 7.1rem;
+  margin-left: 9.6rem;
+  margin-top: -11.6rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  /* or 15px */
+  text-align: left;
+  color: #668BD5;
+}
+.groups_header__point {
+  width: 42.8rem;
+}
+.groups_header__title_p {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.105em;
+  -webkit-transform: skew(0 deg);
+          transform: skew(0 deg);
+  opacity: 0.5;
+  color: white;
+  text-shadow: 0.1rem 0 0.1rem #668BD5,  0 0.1rem 0.1rem #668BD5,  -0.1rem 0 0.1rem #668BD5,  0 -0.1rem 0.1rem #668BD5;
+  text-align: left;
+  padding-top: 6.5rem;
+}
+
+.departments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.toggle-box {
+  display: none;
+}
+
+.toggle-box + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.departments-title {
+  cursor: pointer;
+  margin: 0px 0px 2px 0px;
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  border-radius: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 7rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  /* identical to box height */
+  padding-left: 3.5rem;
+  padding-top: 2.5rem;
+}
+
+.close .menu__box {
+  height: 0px;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+
+.open .menu__box {
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5rem;
+  margin-top: -1.3rem;
+  margin-left: 1.5rem;
+  height: 53.4rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.button_departments_podl {
+  margin-left: 6rem;
+  height: 7.2rem;
+  background: #FFFFFF;
+  /* Тень */
+  margin-top: 2rem;
+  -webkit-box-shadow: 0rem 0rem 2.2rem 0.5rem rgba(190, 199, 231, 0.23);
+          box-shadow: 0rem 0rem 2.2rem 0.5rem rgba(190, 199, 231, 0.23);
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.button_biol_podl {
+  background: #668BD4;
+  /* Тень */
+}
+
+.toggle-box + label + div {
+  display: none;
+}
+
+.toggle-box:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 60.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: 1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box:checked + label {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* центрируем содержимое кнопки */
+  position: absolute;
+  width: 4.1rem;
+  height: 4.1rem;
+  left: 125.4rem;
+  margin-top: -6rem;
+  cursor: pointer;
+  /*вид курсора*/
+  z-index: 1;
+  border-radius: 50%;
+  background: #668BD4;
+  cursor: pointer;
+  -webkit-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+}
+
+.menu__btn ::before,
+.menu__btn ::after {
+  content: '';
+  position: absolute;
+  left: 1.1rem;
+  display: block;
+  width: 2.05rem;
+  height: 0.3rem;
+  background: #FFFFFF;
+}
+
+.menu__btn ::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu__btn ::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.button_geographer_podl {
+  margin-top: 1.8rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-left: 0rem;
+}
+
+.toggle-box {
+  float: left;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open-sans',Arial,sans-serif;
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+}
+
+/* стилизуем кнопку */
+.menu__btn_geogr {
+  background: #6CAFC9;
+}
+
+.button_geolog_podl {
+  margin-top: 1.8rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  margin-left: 0rem;
+}
+
+/* стилизуем кнопку */
+.menu__btn_geolog {
+  background: #6DC2AB;
+}
+
+.button_IDPO_podl {
+  margin-top: 2rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  margin-left: 0rem;
+}
+
+/* стилизуем кнопку */
+.menu__btn_IDPO {
+  background: #94B478;
+}
+
+.button_arts_podl {
+  margin-top: 2rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  margin-left: 0rem;
+}
+
+.menu__btn_arts {
+  background: #668BD4;
+}
+
+.button_history_podl {
+  margin-top: 2rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-left: 0rem;
+}
+
+.menu__btn_history {
+  background: #6CAFC9;
+}
+
+.button_phys_podl {
+  margin-top: 1.8rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  margin-left: 0rem;
+}
+
+.menu__btn_phys {
+  background: #6DC2AB;
+}
+
+.button_sport_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_sport {
+  background: #94B478;
+}
+
+.button_filol_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  margin-top: 2rem;
+}
+
+.menu__btn_filol {
+  background: #668BD4;
+}
+
+.button_chem_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-top: 2rem;
+}
+
+.menu__btn_chem {
+  background: #6CAFC9;
+}
+
+.button_mex-mat_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  margin-top: 2rem;
+}
+
+.menu__btn_mex-mat {
+  background: #6DC2AB;
+}
+
+.button_sociol_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_sociol {
+  background: #94B478;
+}
+
+.button_lang_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  margin-top: 2rem;
+}
+
+.menu__btn_lang {
+  background: #668BD4;
+}
+
+.button_FKNIT_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_FKNIT {
+  background: #6CAFC9;
+}
+
+.button_psych_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  margin-top: 2rem;
+}
+
+.menu__btn_psych {
+  background: #6DC2AB;
+}
+
+.button_FPPSO_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_FPPSO {
+  background: #94B478;
+}
+
+.button_FFMMT_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  margin-top: 2rem;
+}
+
+.menu__btn_FFMMT {
+  background: #668BD4;
+}
+
+.button_philol_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-top: 2rem;
+}
+
+.menu__btn_philol {
+  background: #6CAFC9;
+}
+
+.button_econom_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_econom {
+  background: #6DC2AB;
+}
+
+.button_legal_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_legal {
+  background: #94B478;
+}
+
+.button_geolog-college_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  margin-top: 1.8rem;
+}
+
+.menu__btn_geolog-college {
+  background: #668BD4;
+}
+
+.button_yabl_podl {
+  margin-left: 0rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  margin-top: 2rem;
+}
+
+.menu__btn_yabl {
+  background: #6CAFC9;
+}
+
+.menu__box_title {
+  width: 38.4rem;
+  height: 6.4rem;
+  padding-left: 3.0rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 159%;
+  /* identical to box height, or 32px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6DC2AB;
+}
+
+.form-education {
+  margin-left: 3rem;
+  margin-top: 2.2rem;
+}
+.form-education_btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education > input[type="radio"] {
+  display: none;
+}
+
+.form-education > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.6rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime:checked ~ #block__daytime,
+#form-education__part-time:checked ~ #block__part-time,
+#form-education__graduate:checked ~ #block__graduate,
+#form-education__session:checked ~ #block__session {
+  display: block;
+}
+
+.form-education > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education > label:first-of-type {
+  margin-left: 0;
+}
+
+.groups__daytime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 25rem;
+}
+
+.undergraduate {
+  width: 63.4rem;
+}
+
+.undergraduate_p {
+  width: 10.2rem;
+  height: 2rem;
+  padding-top: 3rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #3D455F;
+}
+
+.magistracy_p {
+  width: 10.4rem;
+  height: 1.6rem;
+  padding-top: 3rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #3D455F;
+}
+
+/*текст 1курс и т.д*/
+.course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.course_number {
+  margin-top: 2.5rem;
+  width: 5.9rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.68rem;
+  color: #6DC2AB;
+}
+
+.course_p {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.68rem;
+  color: #6DC2AB;
+}
+.course_p li {
+  display: inline-block;
+  width: 3.9rem;
+  color: #666;
+  text-align: center;
+}
+.course_p ul {
+  margin-top: -2rem;
+  margin-left: 1.5rem;
+  position: absolute;
+}
+.course_p a {
+  font-family: "Golos";
+  font-style: normal;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.teacher-schedule__title {
+  width: 22.2rem;
+  height: 3.8rem;
+  left: 10.2rem;
+  top: 303.6rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 3.8rem;
+  color: #3D455F;
+}
+
+.teacher-schedule-search__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.search-classroom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 134rem;
+  height: 24.4rem;
+  margin-left: 4.5rem;
+}
+.search-classroom__title {
+  width: 74.6rem;
+  height: 18.4rem;
+  margin-left: 0rem;
+  margin-top: 11rem;
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 6.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  -webkit-transform: skew(0 deg);
+          transform: skew(0 deg);
+  opacity: 0.5;
+  color: white;
+  text-shadow: 0.1rem 0 0.1rem #668BD5,  0 0.1rem 0.1rem #668BD5,  -0.1rem 0 0.1rem #668BD5,  0 -0.1rem 0.1rem #668BD5;
+}
+.search-classroom__point {
+  width: 27.5rem;
+  height: 17.8rem;
+}
+.search-classroom__point_img {
+  width: 15.847rem;
+  height: 1.114rem;
+  margin-top: 14.4rem;
+  background: url(./point/point.png);
+  opacity: 0.5;
+}
+.search-classroom__text {
+  width: 37.5rem;
+  height: 19.6rem;
+  margin-right: 0;
+}
+.search-classroom__text_p {
+  width: 26.5rem;
+  height: 7.1rem;
+  margin-top: 12rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  /* or 15px */
+  text-align: right;
+  color: #668BD5;
+}
+.search-classroom_point_box_img {
+  text-align: right;
+  margin-left: 24rem;
+  margin-top: -12rem;
+  background: url(./point/point_box.png);
+  height: 15.9rem;
+  width: 7.9rem;
+}
+
+.field-search-corps_shadow {
+  width: 129.6rem;
+  height: 27rem;
+  background: #668BD4;
+  /* Тень */
+  -webkit-box-shadow: 0rem 0rem 2.2rem 0.5rem rgba(190, 199, 231, 0.23);
+          box-shadow: 0rem 0rem 2.2rem 0.5rem rgba(190, 199, 231, 0.23);
+  border-radius: 1.5rem;
+  margin-left: 4.5rem;
+}
+
+.field-search-corps_podl {
+  width: 128.1rem;
+  height: 27rem;
+  margin-left: 1.5rem;
+  margin-top: 0rem;
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 1rem 1rem 3rem #F5F5F5;
+          box-shadow: 1rem 1rem 3rem #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.corps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 125.45rem;
+  height: 7rem;
+  padding-left: 1.2rem;
+}
+.corps__number {
+  width: 18.7rem;
+  height: 4.2rem;
+  margin-top: 3.8rem;
+  border-radius: 1.5rem;
+  background: #F1F3FA;
+  border: 0rem solid #668BD4;
+  line-height: 3.2rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #3D455F;
+  text-align: center;
+  padding-top: 1rem;
+}
+.corps__number_ix {
+  width: 18.7rem;
+  height: 4.2rem;
+  padding-top: 1rem;
+  margin-top: 3.8rem;
+  border-radius: 1.5rem;
+  border: 0rem solid #668BD4;
+  line-height: 3.2rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #3D455F;
+  text-align: center;
+  background: #F1F3FA;
+}
+.corps__number_ix_blue {
+  width: 18.7rem;
+  height: 4.2rem;
+  padding-top: 1rem;
+  margin-top: 3.8rem;
+  border-radius: 1.5rem;
+  border: 0rem solid #668BD4;
+  line-height: 3.2rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  background: #668BD4;
+}
+
+/* скрываем чекбокс */
+#button_fio__toggle {
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: 1rem;
+  opacity: 0;
+}
+
+#button_fio__toggle:checked ~ .button-down-arrow_img {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#button_fio__toggle:checked ~ .fio__box {
+  visibility: visible;
+  left: 0;
+}
+
+#button_fio__toggle:checked {
+  z-index: 20;
+}
+
+/* контейнер меню */
+.fio__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  /*По-умолчанию оно будет скрыто */
+  top: 0;
+  top: -100%;
+  width: 51rem;
+  margin: 4rem -43.5rem;
+  padding: 5.5rem 2rem;
+  list-style: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0.0625rem 0rem 0.375rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.0625rem 0rem 0.375rem rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: .25s;
+  transition-duration: .25s;
+}
+
+.button-down-arrow__FIO_modal-okno {
+  position: absolute;
+  width: 11.4rem;
+  height: 4rem;
+  left: 43.5rem;
+  top: 0rem;
+  background: #668BD4;
+  border-radius: 1rem;
+  border: 0rem solid #668BD4;
+}
+
+.field-search__input_modal-okno {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 55rem;
+  height: 4rem;
+  margin-left: -2rem;
+  margin-top: -5rem;
+  background: #FFFFFF;
+  border: 0rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding-left: 1.3rem;
+  color: #949ABC;
+}
+
+.field-search__input_modal-okno:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #A84F3D;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.button-down-arrow_img_modal-okno {
+  width: 2rem;
+  height: 1.075rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#button_subdivision__toggle {
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: 1rem;
+  opacity: 0;
+}
+
+#button_subdivision__toggle:checked ~ .button-down-arrow_img {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#button_subdivision__toggle:checked ~ .subdivision__box {
+  visibility: visible;
+  left: 0;
+}
+
+#button_subdivision__toggle:checked {
+  z-index: 20;
+}
+
+.subdivision__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  /*По-умолчанию оно будет скрыто */
+  top: 0;
+  top: -100%;
+  width: 51rem;
+  margin: 4rem -43.5rem;
+  padding: 5.5rem 2rem;
+  list-style: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0.0625rem 0rem 0.375rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.0625rem 0rem 0.375rem rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: .25s;
+  transition-duration: .25s;
+}
+
+.button-down-arrow__subdivision_modal-okno {
+  position: absolute;
+  width: 11.4rem;
+  height: 4rem;
+  left: 43.5rem;
+  top: 0rem;
+  background: #668BD4;
+  border-radius: 1rem;
+  border: 0rem solid #668BD4;
+}
+
+.b-input {
+  display: inline-block;
+  position: relative;
+}
+
+.b-input:before,
+.b-input:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.b-input:after {
+  top: -0.6rem;
+  right: 0;
+  background: #668BD4;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 11.4rem;
+  height: 115%;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.b-input:before {
+  top: 0;
+  right: 5rem;
+  margin-top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: solid #ffffff;
+  border-width: 0 0.4rem 0.4rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+}
+
+.b-input_teacher {
+  display: inline-block;
+  position: relative;
+}
+
+.b-input_teacher:before,
+.b-input_teacher:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.b-input_teacher:before {
+  top: 0;
+  right: 5rem;
+  margin-top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: solid #ffffff;
+  border-width: 0 0rem 0rem 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.b-input_teacher:after {
+  right: 0rem;
+  background: #668BD4;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 11.5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  z-index: 0;
+  height: 100%;
+}
+
+.button-down-arrow_img {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 51rem;
+  margin-top: 1rem;
+  z-index: 3;
+}
+.toggle-box_art {
+  display: none;
+}
+
+.toggle-box_art + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_art + label + div {
+  display: none;
+}
+
+.toggle-box_art:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_art:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_art:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_art:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_art:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_art:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_art p {
+  color: #668BD4;
+}
+
+.departments-title_art {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.open .menu__box_arts {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.course_number_art {
+  color: #668BD4;
+}
+
+.menu__box_title_art {
+  color: #668BD4;
+}
+
+.form-education_art lable {
+  color: #668BD4;
+}
+
+.magistracy_art p {
+  color: #668BD4;
+}
+
+.form-education_art {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_arts {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_art > input[type="radio"] {
+  display: none;
+}
+
+.form-education_art > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_art > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_art:checked ~ #block__daytime_art,
+#form-education__part-time_art:checked ~ #block__part-time_art,
+#form-education__graduate_art:checked ~ #block__graduate_art,
+#form-education__session_art:checked ~ #block__session_art {
+  display: block;
+}
+
+.form-education_art > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_art > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_art {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_art:after {
+  background: #668BD4;
+}
+
+.toggle-box_biol {
+  display: none;
+}
+
+.toggle-box_biol + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_biol + label + div {
+  display: none;
+}
+
+.toggle-box_biol:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_biol:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_biol:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_biol:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_biol:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_biol:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_biol p {
+  color: #668BD4;
+}
+
+.menu__box_title_biol {
+  color: #668BD4;
+}
+
+.form-education_biol lable {
+  color: #668BD4;
+}
+
+.course_number_biol {
+  color: #668BD4;
+}
+
+.open .menu__box_biolg {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.departments-title_biolg {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.magistracy_biol p {
+  color: #668BD4;
+}
+
+.form-education_biol {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_biol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_biol > input[type="radio"] {
+  display: none;
+}
+
+.form-education_biol > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_biol > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0px;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_biol:checked ~ #block__daytime_biol,
+#form-education__part-time_biol:checked ~ #block__part-time_biol,
+#form-education__graduate_biol:checked ~ #block__graduate_biol,
+#form-education__session_biol:checked ~ #block__session_biol {
+  display: block;
+}
+
+.form-education_biol > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_biol > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_biol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_biol:after {
+  background: #668BD4;
+}
+
+.toggle-box_chem {
+  display: none;
+}
+
+.toggle-box_chem + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_chem + label + div {
+  display: none;
+}
+
+.toggle-box_chem:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_chem:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_chem:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_chem:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_chem:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_chem:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_chem p {
+  color: #6CAFC9;
+}
+
+.open .menu__box_chem {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.departments-title_chem {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.course_number_chem {
+  color: #6CAFC9;
+}
+
+.menu__box_title_chem {
+  color: #6CAFC9;
+}
+
+.form-education_chem lable {
+  color: #6CAFC9;
+}
+
+.magistracy_chem p {
+  color: #6CAFC9;
+}
+
+.form-education_chem {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_chem {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_chem > input[type="radio"] {
+  display: none;
+}
+
+.form-education_chem > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_chem > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_chem:checked ~ #block__daytime_chem,
+#form-education__part-time_chem:checked ~ #block__part-time_chem,
+#form-education__graduate_chem:checked ~ #block__graduate_chem,
+#form-education__session_chem:checked ~ #block__session_chem {
+  display: block;
+}
+
+.form-education_chem > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_chem > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_chem {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_chem:after {
+  background: #6CAFC9;
+}
+
+.toggle-box_econom {
+  display: none;
+}
+
+.toggle-box_econom + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_econom + label + div {
+  display: none;
+}
+
+.toggle-box_econom:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box_econom:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_econom:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_econom:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_econom:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_econom:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_econom p {
+  color: #6DC2AB;
+}
+
+.open .menu__box_econom {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.departments-title_econom {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.course_number_econom {
+  color: #6DC2AB;
+}
+
+.menu__box_title_econom {
+  color: #6DC2AB;
+}
+
+.form-education_econom lable {
+  color: #6DC2AB;
+}
+
+.magistracy_econom p {
+  color: #6DC2AB;
+}
+
+.form-education_econom {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_econom {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_econom > input[type="radio"] {
+  display: none;
+}
+
+.form-education_econom > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_econom > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_econom:checked ~ #block__daytime_econom,
+#form-education__part-time_econom:checked ~ #block__part-time_econom,
+#form-education__graduate_econom:checked ~ #block__graduate_econom,
+#form-education__session_econom:checked ~ #block__session_econom {
+  display: block;
+}
+
+.form-education_econom > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_econom > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_econom {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_econom:after {
+  background: #6DC2AB;
+}
+
+.toggle-box_ffmmt {
+  display: none;
+}
+
+.toggle-box_ffmmt + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_ffmmt + label + div {
+  display: none;
+}
+
+.toggle-box_ffmmt:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_ffmmt:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_ffmmt:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2.0rem;
+  left: 0.9rem;
+}
+
+.toggle-box_ffmmt:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_ffmmt:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_ffmmt:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_ffmmt p {
+  color: #668BD4;
+}
+
+.course_number_ffmmt {
+  color: #668BD4;
+}
+
+.menu__box_title_ffmmt {
+  color: #668BD4;
+}
+
+.open .menu__box_FFMMT {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.departments-title_FFMMT {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.form-education_ffmmt lable {
+  color: #668BD4;
+}
+
+.magistracy_ffmmt p {
+  color: #668BD4;
+}
+
+.form-education_ffmmt {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_ffmmt {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_ffmmt > input[type="radio"] {
+  display: none;
+}
+
+.form-education_ffmmt > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_ffmmt > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_ffmmt:checked ~ #block__daytime_ffmmt,
+#form-education__part-time_ffmmt:checked ~ #block__part-time_ffmmt,
+#form-education__graduate_ffmmt:checked ~ #block__graduate_ffmmt,
+#form-education__session_ffmmt:checked ~ #block__session_ffmmt {
+  display: block;
+}
+
+.form-education_ffmmt > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_ffmmt > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_ffmmt {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_ffmmt:after {
+  background: #668BD4;
+}
+
+.toggle-box_filol {
+  display: none;
+}
+
+.toggle-box_filol + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_filol + label + div {
+  display: none;
+}
+
+.toggle-box_filol:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_filol:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_filol:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_filol:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_filol:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_filol:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_filol p {
+  color: #668BD4;
+}
+
+.departments-title_filol {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.open .menu__box_filol {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.menu__box_title_filol {
+  color: #668BD4;
+}
+
+.form-education_filol lable {
+  color: #668BD4;
+}
+
+.course_number_filol {
+  color: #668BD4;
+}
+
+.magistracy_filol p {
+  color: #668BD4;
+}
+
+.form-education_filol {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_filol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_filol > input[type="radio"] {
+  display: none;
+}
+
+.form-education_filol > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_filol > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_filol:checked ~ #block__daytime_filol,
+#form-education__part-time_filol:checked ~ #block__part-time_filol,
+#form-education__graduate_filol:checked ~ #block__graduate_filol,
+#form-education__session_filol:checked ~ #block__session_filol {
+  display: block;
+}
+
+.form-education_filol > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_filol > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_filol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_filol:after {
+  background: #668BD4;
+}
+
+.toggle-box_fknit {
+  display: none;
+}
+
+.toggle-box_fknit + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_fknit + label + div {
+  display: none;
+}
+
+.toggle-box_fknit:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_fknit:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_fknit:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_fknit:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_fknit:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_fknit:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_fknit p {
+  color: #6CAFC9;
+}
+
+.open .menu__box_FKNIT {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.departments-title_FKNIT {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.menu__box_title_fknit {
+  color: #6CAFC9;
+}
+
+.course_number_fknit {
+  color: #6CAFC9;
+}
+
+.form-education_fknit lable {
+  color: #6CAFC9;
+}
+
+.magistracy_fknit p {
+  color: #6CAFC9;
+}
+
+.form-education_fknit {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_fknit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 46rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_fknit > input[type="radio"] {
+  display: none;
+}
+
+.form-education_fknit > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_fknit > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_fknit:checked ~ #block__daytime_fknit,
+#form-education__part-time_fknit:checked ~ #block__part-time_fknit,
+#form-education__graduate_fknit:checked ~ #block__graduate_fknit,
+#form-education__session_fknit:checked ~ #block__session_fknit {
+  display: block;
+}
+
+.form-education_fknit > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_fknit > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_fknit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_fknit:after {
+  background: #6CAFC9;
+}
+
+.toggle-box_fppso {
+  display: none;
+}
+
+.toggle-box_fppso + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_fppso + label + div {
+  display: none;
+}
+
+.toggle-box_fppso:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box_fppso:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_fppso:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_fppso:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_fppso:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_fppso:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_fppso p {
+  color: #94B478;
+}
+
+.departments-title_FPPSO {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.open .menu__box_FPPSO {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.menu__box_title_fppso {
+  color: #94B478;
+}
+
+.form-education_fppso lable {
+  color: #94B478;
+}
+
+.magistracy_fppso p {
+  color: #94B478;
+}
+
+.course_number_fppso {
+  color: #94B478;
+}
+
+.form-education_fppso {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_fppso {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_fppso > input[type="radio"] {
+  display: none;
+}
+
+.form-education_fppso > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #94B478;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_fppso > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_fppso:checked ~ #block__daytime_fppso,
+#form-education__part-time_fppso:checked ~ #block__part-time_fppso,
+#form-education__graduate_fppso:checked ~ #block__graduate_fppso,
+#form-education__session_fppso:checked ~ #block__session_fppso {
+  display: block;
+}
+
+.form-education_fppso > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #94B478;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+}
+
+.form-education_fppso > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_fppso {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #94B478;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_fppso:after {
+  background: #94B478;
+}
+
+.toggle-box_geogr {
+  display: none;
+}
+
+.toggle-box_geogr + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_geogr + label + div {
+  display: none;
+}
+
+.toggle-box_geogr:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_geogr:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_geogr:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_geogr:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_geogr:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_geogr:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_geogr p {
+  color: #6CAFC9;
+}
+
+.open .menu__box_geogr {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.departments-title_geogr {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.course_number_geogr {
+  color: #6CAFC9;
+}
+
+.menu__box_title_geogr {
+  color: #6CAFC9;
+}
+
+.form-education_geogr lable {
+  color: #6CAFC9;
+}
+
+.magistracy_geogr p {
+  color: #6CAFC9;
+}
+
+.form-education_geogr {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn__geogr {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_geogr > input[type="radio"] {
+  display: none;
+}
+
+.form-education_geogr > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_geogr > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_geogr:checked ~ #block__daytime_geogr,
+#form-education__part-time_geogr:checked ~ #block__part-time_geogr,
+#form-education__graduate_geogr:checked ~ #block__graduate_geogr,
+#form-education__session_geogr:checked ~ #block__session_geogr {
+  display: block;
+}
+
+.form-education_geogr > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_geogr > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_geogr {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_geogr:after {
+  background: #6CAFC9;
+}
+
+.toggle-box_geolog {
+  display: none;
+}
+
+.toggle-box_geolog + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_geolog + label + div {
+  display: none;
+}
+
+.toggle-box_geolog:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box_geolog:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_geolog:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_geolog:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_geolog:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_geolog:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_geolog p {
+  color: #6DC2AB;
+}
+
+.open .menu__box_geolog {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.departments-title_geolog {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.menu__box_title_geolog {
+  color: #6DC2AB;
+}
+
+.form-education_geolog lable {
+  color: #6DC2AB;
+}
+
+.course_number_geolog {
+  color: #6DC2AB;
+}
+
+.magistracy_geolog p {
+  color: #6DC2AB;
+}
+
+.form-education_geolog {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_geolog {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_geolog > input[type="radio"] {
+  display: none;
+}
+
+.form-education_geolog > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_geolog > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_geolog:checked ~ #block__daytime_geolog,
+#form-education__part-time_geolog:checked ~ #block__part-time_geolog,
+#form-education__graduate_geolog:checked ~ #block__graduate_geolog,
+#form-education__session_geolog:checked ~ #block__session_geolog {
+  display: block;
+}
+
+.form-education_geolog > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_geolog > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_geolog {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_geolog:after {
+  background: #6DC2AB;
+}
+
+.toggle-box_geolog-college {
+  display: none;
+}
+
+.toggle-box_geolog-college + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_geolog-college + label + div {
+  display: none;
+}
+
+.toggle-box_geolog-college:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_geolog-college:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_geolog-college:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_geolog-college:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_geolog-college:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_geolog-college:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_geolog-college p {
+  color: #668BD4;
+}
+
+.departments-title_geolog-college {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.course_number_geolog-college {
+  color: #668BD4;
+}
+
+.open .menu__box_geolog-college {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.menu__box_title_geolog-college {
+  color: #668BD4;
+}
+
+.form-education_geolog-college lable {
+  color: #668BD4;
+}
+
+.magistracy_geolog-college p {
+  color: #668BD4;
+}
+
+.form-education_geolog-college {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_geolog-college {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_geolog-college > input[type="radio"] {
+  display: none;
+}
+
+.form-education_geolog-college > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_geolog-college > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_geolog-college:checked ~ #block__daytime_geolog-college,
+#form-education__part-time_geolog-college:checked ~ #block__part-time_geolog-college,
+#form-education__graduate_geolog-college:checked ~ #block__graduate_geolog-college,
+#form-education__session_geolog-college:checked ~ #block__session_geolog-college {
+  display: block;
+}
+
+.form-education_geolog-college > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_geolog-college > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_geolog-college {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_geolog-college:after {
+  background: #668BD4;
+}
+
+.toggle-box_history {
+  display: none;
+}
+
+.toggle-box_history + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_history + label + div {
+  display: none;
+}
+
+.toggle-box_history:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_history:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_history:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_history:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_history:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_history:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_history p {
+  color: #6CAFC9;
+}
+
+.departments-title_history {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.open .menu__box_history {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.menu__box_title_history {
+  color: #6CAFC9;
+}
+
+.form-education_history lable {
+  color: #6CAFC9;
+}
+
+.magistracy_history p {
+  color: #6CAFC9;
+}
+
+.course_number_history {
+  color: #6CAFC9;
+}
+
+.form-education_history {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_history {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_history > input[type="radio"] {
+  display: none;
+}
+
+.form-education_history > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_history > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_history:checked ~ #block__daytime_history,
+#form-education__part-time_history:checked ~ #block__part-time_history,
+#form-education__graduate_history:checked ~ #block__graduate_history,
+#form-education__session_history:checked ~ #block__session_history {
+  display: block;
+}
+
+.form-education_history > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_history > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_history {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 10px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_history:after {
+  background: #6CAFC9;
+}
+
+.toggle-box__IDPO {
+  display: none;
+}
+
+.toggle-box__IDPO + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box__IDPO + label + div {
+  display: none;
+}
+
+.toggle-box__IDPO:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box__IDPO:checked + label {
+  opacity: 0;
+}
+
+.toggle-box__IDPO:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box__IDPO:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box__IDPO:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box__IDPO:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_IDPO p {
+  color: #94B478;
+}
+
+.open .menu__box_idpo {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.departments-title_idpo {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.menu__box_title_IDPO {
+  color: #94B478;
+}
+
+.form-education_IDPO lable {
+  color: #94B478;
+}
+
+.magistracy_IDPO p {
+  color: #94B478;
+}
+
+.course_number_idpo {
+  color: #94B478;
+}
+
+.form-education_IDPO {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_idpo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_IDPO > input[type="radio"] {
+  display: none;
+}
+
+.form-education_IDPO > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #94B478;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_IDPO > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_idpo:checked ~ #block__daytime_idpo,
+#form-education__part-time_idpo:checked ~ #block__part-time_idpo,
+#form-education__graduate_idpo:checked ~ #block__graduate_idpo,
+#form-education__session_idpo:checked ~ #block__session_idpo {
+  display: block;
+}
+
+.form-education_IDPO > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #94B478;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+}
+
+.form-education_IDPO > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_IDPO {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #94B478;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_idpo:after {
+  background: #94B478;
+}
+
+.toggle-box_lang {
+  display: none;
+}
+
+.toggle-box_lang + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_lang + label + div {
+  display: none;
+}
+
+.toggle-box_lang:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+          box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.toggle-box_lang:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_lang:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_lang:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_lang:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_lang:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.open .menu__box_lang {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.undergraduate_lang p {
+  color: #668BD4;
+}
+
+.departments-title_lang {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+  box-shadow: -1.5rem 0rem 0rem 0rem #668BD4;
+}
+
+.menu__box_title_lang {
+  color: #668BD4;
+}
+
+.form-education_lang lable {
+  color: #668BD4;
+}
+
+.magistracy_lang p {
+  color: #668BD4;
+}
+
+.course_number_lang {
+  color: #668BD4;
+}
+
+.form-education_lang {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_lang {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_lang > input[type="radio"] {
+  display: none;
+}
+
+.form-education_lang > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #668BD4;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_lang > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_lang:checked ~ #block__daytime_lang,
+#form-education__part-time_lang:checked ~ #block__part-time_lang,
+#form-education__graduate_lang:checked ~ #block__graduate_lang,
+#form-education__session_lang:checked ~ #block__session_lang {
+  display: block;
+}
+
+.form-education_lang > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #668BD4;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #668BD4;
+  border-radius: 5.5rem;
+}
+
+.form-education_lang > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_lang {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #668BD4;
+  border-radius: 1rem;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_lang:after {
+  background: #668BD4;
+}
+
+.toggle-box_legal {
+  display: none;
+}
+
+.toggle-box_legal + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_legal + label + div {
+  display: none;
+}
+
+.toggle-box_legal:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box_legal:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_legal:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_legal:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_legal:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_legal:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_legal p {
+  color: #94B478;
+}
+
+.departments-title_legal {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.open .menu__box_legal {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.menu__box_title_legal {
+  color: #94B478;
+}
+
+.form-education_legal lable {
+  color: #94B478;
+}
+
+.course_number_legal {
+  color: #94B478;
+}
+
+.magistracy_legal p {
+  color: #94B478;
+}
+
+.form-education_legal {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_legal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_legal > input[type="radio"] {
+  display: none;
+}
+
+.form-education_legal > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #94B478;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_legal > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_legal:checked ~ #block__daytime_legal,
+#form-education__part-time_legal:checked ~ #block__part-time_legal,
+#form-education__graduate_legal:checked ~ #block__graduate_legal,
+#form-education__session_legal:checked ~ #block__session_legal {
+  display: block;
+}
+
+.form-education_legal > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #94B478;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+}
+
+.form-education_legal > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_legal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #94B478;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_legal:after {
+  background: #94B478;
+}
+
+.toggle-box_mex-mat {
+  display: none;
+}
+
+.toggle-box_mex-mat + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_mex-mat + label + div {
+  display: none;
+}
+
+.toggle-box_mex-mat:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box_mex-mat:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_mex-mat:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_mex-mat:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_mex-mat:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_mex-mat:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_mex-mat p {
+  color: #6DC2AB;
+}
+
+.departments-title_mex-mat {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.course_number_mex-mat {
+  color: #6DC2AB;
+}
+
+.menu__box_title_mex-mat {
+  color: #6DC2AB;
+}
+
+.form-education_mex-mat lable {
+  color: #6DC2AB;
+}
+
+.open .menu__box_mex-mat {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.magistracy_mex-mat p {
+  color: #6DC2AB;
+}
+
+.form-education_mex-mat {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_mex-mat {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_mex-mat > input[type="radio"] {
+  display: none;
+}
+
+.form-education_mex-mat > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_mex-mat > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 0.1rem solid #eee;
+  padding: 1rem 0px;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_mex-mat:checked ~ #block__daytime_mex-mat,
+#form-education__part-time_mex-mat:checked ~ #block__part-time_mex-mat,
+#form-education__graduate_mex-mat:checked ~ #block__graduate_mex-mat,
+#form-education__session_mex-mat:checked ~ #block__session_mex-mat {
+  display: block;
+}
+
+.form-education_mex-mat > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_mex-mat > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_mex-mat {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_mex-mat:after {
+  background: #6DC2AB;
+}
+
+.toggle-box_philos {
+  display: none;
+}
+
+.toggle-box_philos + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_philos + label + div {
+  display: none;
+}
+
+.toggle-box_philos:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_philos:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_philos:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_philos:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_philos:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_philos:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_philos p {
+  color: #6CAFC9;
+}
+
+.departments-title_philol {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.open .menu__box_philol {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.course_number_philos {
+  color: #6CAFC9;
+}
+
+.menu__box_title_philos {
+  color: #6CAFC9;
+}
+
+.form-education_philos lable {
+  color: #6CAFC9;
+}
+
+.magistracy_philos p {
+  color: #6CAFC9;
+}
+
+.form-education_philos {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_philos {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_philos > input[type="radio"] {
+  display: none;
+}
+
+.form-education_philos > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_philos > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_philos:checked ~ #block__daytime_philos,
+#form-education__part-time_philos:checked ~ #block__part-time_philos,
+#form-education__graduate_philos:checked ~ #block__graduate_philos,
+#form-education__session_philos:checked ~ #block__session_philos {
+  display: block;
+}
+
+.form-education_philos > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_philos > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_philos {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_philos:after {
+  background: #6CAFC9;
+}
+
+.toggle-box_phys {
+  display: none;
+}
+
+.toggle-box_phys + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_phys + label + div {
+  display: none;
+}
+
+.toggle-box_phys:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box_phys:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_phys:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_phys:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_phys:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_phys:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_phys p {
+  color: #6DC2AB;
+}
+
+.departments-title_phys {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.open .menu__box_phys {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.course_number_phys {
+  color: #6DC2AB;
+}
+
+.menu__box_title_phys {
+  color: #6DC2AB;
+}
+
+.form-education_phys lable {
+  color: #6DC2AB;
+}
+
+.magistracy_phys p {
+  color: #6DC2AB;
+}
+
+.form-education_phys {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_phys {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_phys > input[type="radio"] {
+  display: none;
+}
+
+.form-education_phys > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_phys > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_phys:checked ~ #block__daytime_phys,
+#form-education__part-time_phys:checked ~ #block__part-time_phys,
+#form-education__graduate_phys:checked ~ #block__graduate_phys,
+#form-education__session_phys:checked ~ #block__session_phys {
+  display: block;
+}
+
+.form-education_phys > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_phys > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_phys {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_phys:after {
+  background: #6DC2AB;
+}
+
+.toggle-box_psych {
+  display: none;
+}
+
+.toggle-box_psych + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_psych + label + div {
+  display: none;
+}
+
+.toggle-box_psych:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.toggle-box_psych:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_psych:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_psych:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_psych:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_psych:checked ~ .menu__btn {
+  margin-top: -59.6rem;
+}
+
+.undergraduate_psych p {
+  color: #6DC2AB;
+}
+
+.departments-title_psych {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.open .menu__box_psych {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6DC2AB;
+}
+
+.menu__box_title_psych {
+  color: #6DC2AB;
+}
+
+.form-education_psych lable {
+  color: #6DC2AB;
+}
+
+.course_number_psych {
+  color: #6DC2AB;
+}
+
+.magistracy_psych p {
+  color: #6DC2AB;
+}
+
+.form-education_psych {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_psych {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_psych > input[type="radio"] {
+  display: none;
+}
+
+.form-education_psych > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_psych > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_psych:checked ~ #block__daytime_psych,
+#form-education__part-time_psych:checked ~ #block__part-time_psych,
+#form-education__graduate_psych:checked ~ #block__graduate_psych,
+#form-education__session_psych:checked ~ #block__session_psych {
+  display: block;
+}
+
+.form-education_psych > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6DC2AB;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_psych > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_psych {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_psych:after {
+  background: #6DC2AB;
+}
+
+.toggle-box_sociol {
+  display: none;
+}
+
+.toggle-box_sociol + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_sociol + label + div {
+  display: none;
+}
+
+.toggle-box_sociol:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box_sociol:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_sociol:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_sociol:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_sociol:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_sociol:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_sociol p {
+  color: #94B478;
+}
+
+.open .menu__box_sociol {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.menu__box_title_sociol {
+  color: #94B478;
+}
+
+.form-education_sociol lable {
+  color: #94B478;
+}
+
+.magistracy_sociol p {
+  color: #94B478;
+}
+
+.course_number_sociol {
+  color: #94B478;
+}
+
+.form-education_sociol {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_sociol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_sociol > input[type="radio"] {
+  display: none;
+}
+
+.form-education_sociol > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #94B478;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_sociol > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_sociol:checked ~ #block__daytime_sociol,
+#form-education__part-time_sociol:checked ~ #block__part-time_sociol,
+#form-education__graduate_sociol:checked ~ #block__graduate_sociol,
+#form-education__session_sociol:checked ~ #block__session_sociol {
+  display: block;
+}
+
+.form-education_sociol > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #94B478;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+}
+
+.form-education_sociol > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_sociol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #94B478;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_sociol:after {
+  background: #94B478;
+}
+
+.departments-title_sociol {
+  margin-top: -1rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box_sport {
+  display: none;
+}
+
+.toggle-box_sport + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_sport + label + div {
+  display: none;
+}
+
+.toggle-box_sport:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+          box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.toggle-box_sport:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_sport:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_sport:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_sport:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_sport:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_sport p {
+  color: #94B478;
+}
+
+.departments-title_sport {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.open .menu__box_sport {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+  box-shadow: -1.5rem 0rem 0rem 0rem #94B478;
+}
+
+.menu__box_title_sport {
+  color: #94B478;
+}
+
+.form-education_sport lable {
+  color: #94B478;
+}
+
+.magistracy_sport p {
+  color: #94B478;
+}
+
+.course_number_sport {
+  color: #94B478;
+}
+
+.form-education_sport {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_sport {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_sport > input[type="radio"] {
+  display: none;
+}
+
+.form-education_sport > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #94B478;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_sport > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_sport:checked ~ #block__daytime_sport,
+#form-education__part-time_sport:checked ~ #block__part-time_sport,
+#form-education__graduate_sport:checked ~ #block__graduate_sport,
+#form-education__session_sport:checked ~ #block__session_sport {
+  display: block;
+}
+
+.form-education_sport > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #94B478;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #94B478;
+  border-radius: 5.5rem;
+}
+
+.form-education_sport > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_sport {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #94B478;
+  border-radius: 1rem;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_sport:after {
+  background: #94B478;
+}
+
+.toggle-box_yabl {
+  display: none;
+}
+
+.toggle-box_yabl + label {
+  display: block;
+  background: #FFFFFF;
+  margin-left: 1.5rem;
+  border-radius: 1.5rem;
+  height: 4.9rem;
+}
+
+.toggle-box_yabl + label + div {
+  display: none;
+}
+
+.toggle-box_yabl:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding: 0.5rem;
+  margin-top: -7.5rem;
+  margin-left: 0rem;
+  height: 59.4rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+          box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.toggle-box_yabl:checked + label {
+  opacity: 0;
+}
+
+.toggle-box_yabl:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2rem;
+  left: 0.9rem;
+}
+
+.toggle-box_yabl:checked ~ .menu__btn > span::before {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.toggle-box_yabl:checked ~ .menu__btn > span::after {
+  top: -1.6rem;
+  left: 0.4rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle-box_yabl:checked ~ .menu__btn {
+  margin-top: -58.7rem;
+}
+
+.undergraduate_yabl p {
+  color: #6CAFC9;
+}
+
+.departments-title_yabl {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.open .menu__box_yabl {
+  -webkit-box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+  box-shadow: -1.5rem 0rem 0rem 0rem #6CAFC9;
+}
+
+.menu__box_title_yabl {
+  color: #6CAFC9;
+}
+
+.form-education_yabl lable {
+  color: #6CAFC9;
+}
+
+.magistracy_yabl p {
+  color: #6CAFC9;
+}
+
+.course_number_yabl {
+  color: #6CAFC9;
+}
+
+.form-education_yabl {
+  margin-left: 3rem;
+  margin-top: 1.8rem;
+}
+
+.form-education_btn_yabl {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 28.1rem;
+  height: 4.6rem;
+  left: 10.2rem;
+  top: 267.8rem;
+  background: #6DC2AB;
+  border: 0.2rem solid #6DC2AB;
+  border-radius: 5.5rem;
+}
+
+.form-education_yabl > input[type="radio"] {
+  display: none;
+}
+
+.form-education_yabl > input[type="radio"]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28.1rem;
+  height: 5rem;
+  background: #6CAFC9;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-education_yabl > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#form-education__daytime_yabl:checked ~ #block__daytime_yabl,
+#form-education__part-time_yabl:checked ~ #block__part-time_yabl,
+#form-education__graduate_yabl:checked ~ #block__graduate_yabl,
+#form-education__session_yabl:checked ~ #block__session_yabl {
+  display: block;
+}
+
+.form-education_yabl > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0.1rem solid transparent;
+  padding: 1.4rem 0.8rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-right: 0.6rem;
+  margin-left: 1.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #6CAFC9;
+  width: 28.1rem;
+  height: 5rem;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 5.5rem;
+}
+
+.form-education_yabl > label:first-of-type {
+  margin-left: 0;
+}
+
+.teacher-schedule-search__input_yabl {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 58rem;
+  height: 4rem;
+  left: 10.2rem;
+  top: 307.8rem;
+  background: #FFFFFF;
+  border: 0.2rem solid #6CAFC9;
+  border-radius: 1rem;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #949ABC;
+  padding-left: 1.8rem;
+}
+
+.b-input_teacher_yabl:after {
+  background: #6CAFC9;
+}
+
+/*# sourceMappingURL=style.css.map */
